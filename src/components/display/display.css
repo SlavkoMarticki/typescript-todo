@@ -1,0 +1,35 @@
+.todoContainer{
+    display: flex;
+    width: 30%;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(32, 32, 246);
+}
+.todoContainer .information{
+    flex-grow: 5;
+}
+.todoContainer .information p{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.todoContainer .deleteButton{
+    flex-grow: 1;
+    color: red;
+    height: 100%;
+    float: right;
+}
+.todoContainer .deleteButton button{
+    height: 100%;
+    width: 50px;
+    float: right;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+.todoContainer .deleteButton button:hover{  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
