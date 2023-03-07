@@ -12,10 +12,7 @@ const Display = (props: {todos: ITodo[], removeTodo: Dispatch<SetStateAction<ITo
     const deleteTodo = (id: number) => {
         const newArr = todos.filter((item,index) => index != id);
         removeTodo(newArr);
-       
-        
     }
-
 
     return (
         <div>
@@ -26,7 +23,6 @@ const Display = (props: {todos: ITodo[], removeTodo: Dispatch<SetStateAction<ITo
                             <p> {todo.task} </p>
                             <p> {todo.deadline}</p>
                         </div>
-                    
                         <div className="deleteButton">
                             <button onClick={() => {deleteTodo(key)}}>x</button>
                         </div>
